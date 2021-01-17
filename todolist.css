@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 60px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.judul {
+    background-color: aquamarine;
+    color: #3f3f3f;
+    font-family: 'karla';
+    padding: 5px 80px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 10px 5px rgb(167, 89, 231);
+}
+
+.judul h1 {
+    background-color: aquamarine;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+.task {
+    box-shadow: 0px 2px 10px 5px rgb(113, 41, 172);
+    color: aliceblue;
+    font-size: 21px;
+    font-weight: 800;
+    font-family: 'karla';
+    display: flex;
+    width: 600px;
+    height: fit-content;
+    background: #040C3A;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    min-height: 140px;
+    padding-bottom: 20px;
+    transition: all 1s ease;
+}
+
+.append {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    background-color: blueviolet;
+    padding: 5px;
+    border-radius: 20px 0 0 20px;
+    color: aquamarine;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.append:hover,
+.delete:hover {
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+.delete {
+    position: absolute;
+    right: 0px;
+    top: 95px;
+    background-color: blueviolet;
+    padding: 5px;
+    border-radius: 20px 0 0 20px;
+    color: aquamarine;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.data {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    display: flex;
+    background: aquamarine;
+    color: #3f3f3f;
+    min-width: 280px;
+    max-width: 450px;
+    height: fit-content;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 3px solid rgb(113, 41, 172);
+    margin-top: 20px;
+    box-sizing: border-box;
+    word-break: break-all;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.data:hover {
+    box-shadow: 0px 0px 15px 7px rgb(139, 52, 211);
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.centang {
+    border: 3px solid rgb(59, 204, 240);
+    background: blueviolet;
+    color: aliceblue;
+}
+
+.centang:hover {
+    box-shadow: 0px 0px 10px 5px rgb(84, 231, 231);
+}
+
+@media (max-width: 768px) {
+    .task {
+        width: 400px;
+    }
+
+    .judul h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    svg {
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+
+    .data {
+        width: 230px
+    }
+}
