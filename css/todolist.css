@@ -139,7 +139,7 @@ input[type="checkbox"] {
 
 @media (max-width: 768px) {
     .task {
-        width: 400px;
+        width: 360px;
     }
 
     .judul h1 {
@@ -154,6 +154,7 @@ input[type="checkbox"] {
     }
 
     .data {
-        width: 230px
+        min-width: 200px;
+        max-width: 280px;
     }
 }
